@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <body>
-            <p><h1>Do not click this button, please. you will face DIRE consequences if you do.</h1></p>
-            <button id="funnyhehe">dont click me...</button>
+<head>
+    <title>cool</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Dark background color for dark mode */
+    color: #ffffff; /* Light text color for dark mode */
+  }
+
+  #container {
+    text-align: center;
+  }
+
+  #header {
+    font-family: 'Inter', sans-serif; /* Set the Inter font */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #funnyhehe {
+  font-family: 'Inter', sans-serif;
+    background-color: #54fe02;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  #funnyhehe:hover {
+    background-color: #fefe00;
+    transform: scale(1.05);
+  }
+  
+  #funnyhehe2 {
+  font-family: 'Inter', sans-serif;
+    background-color: #54fe02;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  #funnyhehe2:hover {
+    background-color: #fefe00;
+    transform: scale(1.05);
+  }
+  
+
+  /* Modal Styling */
+  #myModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modalContent {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 50%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #modalButtons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .modal-button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 10px;
+  }
+
+  .modal-button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+  }
+  particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.preloader {
+  position: absolute;
+  background: url(https://storage.googleapis.com/tlochstadb1.appspot.com/24833171/636193647832736518.gif);
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Link to Inter font -->
+</head>
+<body>
+  <div id="container">
+    <div id="header">Do not click this button, please. you will face DIRE consequences if you do.</div>
+    <div id="modalButtons">
+    <button id="funnyhehe" data-type="xp">Don't click me...</button>
+    <button id="funnyhehe2" data-type="xp" onclick="legal()">read boring legal stuff</button>
+    </div>
+  </div>
+<span class="preloader"></span>
+</body>
         <script>
+        
+        
+        function legal() {
+        var newWindow = window.open("", "Legal Disclaimer", "width=400, height=400");
+    newWindow.document.write(`<!DOCTYPE html><html><head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <title>Legal Disclaimer</title> <style> body { font-family: 'Inter', sans-serif; background-color: #1E1E1E; color: #FFFFFF; padding: 20px; } h1 { font-size: 24px; } p { font-size: 16px; } </style></head><body> <h1>LEGAL DISCLAIMER</h1> <p><strong>Disclaimer for Use of meme button</strong></p> <p>This legal disclaimer ("Disclaimer") is presented to you by k00laidm4n ("we," "us," or "our") and governs the use of the HTML button provided on our website or platform.</p> <p><strong>Assumption of Responsibility</strong></p> <p>By clicking the HTML button on our website or platform, you acknowledge and agree to the following:</p> <ol> <li>You are voluntarily choosing to click the HTML button, and you are solely responsible for your decision to do so.</li> <li>You are aware that clicking the HTML button may cause your computer or device to experience lag, slow down, or become unresponsive.</li> </ol> <p><strong>Limited Liability</strong></p> <p>We, the operators of the website or platform, are not responsible or liable for any damages or harm caused to your computer or device due to lag or any other issues resulting from clicking the HTML button. This includes, but is not limited to, damage to your hardware, software, loss of data, or any other loss or inconvenience that may arise.</p> <p><strong>No Warranty</strong></p> <p>We make no representations or warranties of any kind, express or implied, regarding the performance of the HTML button or the consequences of clicking it. You acknowledge and agree that your use of the HTML button is at your own risk.</p> <p><strong>Exemption from Claims</strong></p> <p>You hereby release us from any and all claims, liabilities, demands, actions, causes of action, costs, and expenses, including attorney's fees, that may arise as a result of clicking the HTML button, including any harm or damage to your computer or device.</p> <p><strong>Acceptance of Terms</strong></p> <p>By clicking the HTML button, you are accepting and agreeing to the terms of this Disclaimer. If you do not agree with these terms, you should refrain from clicking the HTML button.</p> <p><strong>Contact Information</strong></p> <p>If you have any questions or concerns regarding this Disclaimer or any other matter, please contact us at admin@tlochsta.dev.</p> <p>This Disclaimer is subject to change at any time without notice, and the current version will be posted on our website or platform.</p> <p>Date: October 15, 2023</p></body></html>`);
+        }
             const btn = document.getElementById("funnyhehe")
 btn.addEventListener("click", function() {
  let txt
@@ -29,6 +164,95 @@ alert(txt);
 <button id="funnyhehe">dont click me.</button>
 */
         </script>
-        </body>
-    </head>
+<script>
+function pop (e) {
+  let amount = 30;
+  switch (e.target.dataset.type) {
+    case 'shadow':
+    case 'line':
+      amount = 60;
+      break;
+  }
+  // Quick check if user clicked the button using a keyboard
+  if (e.clientX === 0 && e.clientY === 0) {
+    const bbox = e.target.getBoundingClientRect();
+    const x = bbox.left + bbox.width / 2;
+    const y = bbox.top + bbox.height / 2;
+    for (let i = 0; i < 30; i++) {
+      // We call the function createParticle 30 times
+      // We pass the coordinates of the button for x & y values
+      createParticle(x, y, e.target.dataset.type);
+    }
+  } else {
+    for (let i = 0; i < amount; i++) {
+      createParticle(e.clientX, e.clientY + window.scrollY, e.target.dataset.type);
+    }
+  }
+}
+function createParticle (x, y, type) {
+  const particle = document.createElement('particle');
+  document.body.appendChild(particle);
+  let width = Math.floor(Math.random() * 30 + 8);
+  let height = width;
+  let destinationX = (Math.random() - 0.5) * 300;
+  let destinationY = (Math.random() - 0.5) * 300;
+  let rotation = Math.random() * 520;
+  let delay = Math.random() * 200;
+  
+  switch (type) {
+    case 'square':
+      particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
+      particle.style.border = '1px solid white';
+      break;
+    case 'emoji':
+      particle.innerHTML = ['❤','🧡','💛','💚','💙','💜','🤎'][Math.floor(Math.random() * 7)];
+      particle.style.fontSize = `${Math.random() * 24 + 10}px`;
+      width = height = 'auto';
+      break;
+    case 'xp':
+      particle.style.backgroundImage = 'url(https://storage.googleapis.com/tlochstadb1.appspot.com/24833171/636193647832736518.gif)';
+      break;
+    case 'shadow':
+      var color = `hsl(${Math.random() * 90 + 90}, 70%, 50%)`;
+      particle.style.boxShadow = `0 0 ${Math.floor(Math.random() * 10 + 10)}px ${color}`;
+      particle.style.background = color;
+      particle.style.borderRadius = '50%';
+      width = height = Math.random() * 5 + 4;
+      break;
+    case 'line':
+      var color = `hsl(${Math.random() * 90 + 90}, 70%, 50%)`;
+      particle.style.background = 'black';
+      height = 1;
+      rotation += 1000;
+      delay = Math.random() * 1000;
+      break;
+  }
+  
+  particle.style.width = `${width}px`;
+  particle.style.height = `${height}px`;
+  const animation = particle.animate([
+    {
+      transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(0deg)`,
+      opacity: 1
+    },
+    {
+      transform: `translate(-50%, -50%) translate(${x + destinationX}px, ${y + destinationY}px) rotate(${rotation}deg)`,
+      opacity: 0
+    }
+  ], {
+    duration: Math.random() * 1000 + 5000,
+    easing: 'cubic-bezier(0, .9, .57, 1)',
+    delay: delay
+  });
+  animation.onfinish = removeParticle;
+}
+function removeParticle (e) {
+  e.srcElement.effect.target.remove();
+}
+
+if (document.body.animate) {
+  document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
+}
+
+</script>
 </html>
