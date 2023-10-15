@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <p><h1>Do not click this button, please. you will face DIRE consequences if you do.</h1></p>
+            <button id="funnyhehe">dont click me...</button>
+        <script>
+            const btn = document.getElementById("funnyhehe")
+btn.addEventListener("click", function() {
+ let txt
+ if (confirm("DONT CLICK OK!!! if you do, you agree to having your browser spamming you with youtube pages.") == true) {
+  // You clicked OK.
+          txt = "well, I WARNED YOU!!!";
+        alert(txt);
+        while (true) {
+                console.log("Window Number " + i);
+                window.open("https://youtube.com/watch?v=A-U4E7AxA9I");
+                // Insert funny link here lol
+}
+ } else {
+ // You cancelled
+txt = "good, thanks! i wish a happy day on ya! ur computer is saved!!! :D";
+alert(txt);
+ }
+
+
+});
+/*
+<button id="funnyhehe">dont click me.</button>
+*/
+        </script>
+        </body>
+    </head>
+</html>
